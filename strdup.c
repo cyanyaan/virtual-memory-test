@@ -6,6 +6,15 @@ int main(void)
 {
 	char* s;
     s = strdup("uwoughhhh");
+    //strdup is a posix function
+    // alternatively:
+    //
+    // s = malloc(strlen("uwoughhhh") + 1);
+    // if (s != NULL)
+    // {
+    //     strcpy(s, "uwoughhhh");
+    // }
+
     if (s == NULL)
     {
         fprintf(stderr, "brrr...\n");
